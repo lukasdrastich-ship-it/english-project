@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maturitní kvíz – Angličtina</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <div class="card">
+      <header>
+        <h1>Maturitní kvíz – Angličtina</h1>
+        <p class="subtitle">Procvič si otázky k maturitě.</p>
+      </header>
+
+      <div class="score">
+        <span>Skóre</span>
+        <strong id="score">0 / 0</strong>
+      </div>
+
+      <section id="quiz">
+        <div class="question-number" id="questionNumber"></div>
+        <h2 id="question">Načítám otázku…</h2>
+        <div id="options" class="options"></div>
+
+        <div id="feedback" class="feedback" aria-live="polite"></div>
+
+        <div class="buttons">
+          <button id="checkBtn" class="primary">Zkontrolovat odpověď</button>
+          <button id="nextBtn" class="secondary" hidden>Další otázka</button>
+        </div>
+      </section>
+
+      <section id="result" class="result" hidden>
+        <h2>Kvíz dokončen!</h2>
+        <p id="finalScore"></p>
+        <button id="restartBtn" class="primary">Začít znovu</button>
+      </section>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
